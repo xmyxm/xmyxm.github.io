@@ -1,12 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style type="">
+        .main {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+        }
+
+        .sidebar {
+            width: 250px;
+            height: 100%;
+            position: relative;
+        }
+
+        .main::before, .main::after{
+            content:'';
+            position:absolute;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+        }
+
+        .main::before {
+            background:url("https://user-gold-cdn.xitu.io/2019/9/11/16d1f1fc4d2c6815?w=1776&h=1184&f=jpeg&s=173733") left top no-repeat;
+            background-size: cover;
+            filter: blur(5px);
+        }
+
+        .author .icon {
+           
+        }
+
+       .author .user{
+            width: 90px;
+            height: 90px;
+            display: block;
+            border-radius: 90px;
+            margin-bottom: 5px;
+            margin: 50px auto 5px;
+        }
+
+        .author .name {
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .menu {
+            margin-top: 50px;
+        }
+
+        .menu .row{
+            margin-bottom: 50px;
+            list-style: none;
+        }
+
+        .menu .link {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .blog {
+            flex:1;
+            height: 100%;
+            z-index: 1;
+            background: #fff;
+            padding: 30px 30px 10px;
+        }
+    </style>
     <title>博客首页</title>
 </head>
+
 <body>
-    别看了，啥也没有，博客还没转过来。。
+    <div class="main">
+        <div class="sidebar">
+            <div class="author">
+                <div class="icon">
+                    <img class="user" src="https://avatars0.githubusercontent.com/u/11012373?s=460&v=4" />
+                </div>
+                <div class="name">xmyxm</div>
+            </div>
+            <div class="menu">
+                <ol>
+                    <li class="row">
+                        <i></i>
+                        <a class="link" href="">优秀博客推荐</a>
+                    </li>
+                    <li class="row">
+                        <i></i>
+                        <a class="link" href="">前端技术体系</a>
+                    </li>
+                    <li class="row">
+                        <i></i>
+                        <a class="link" href="">优秀前端工具集合</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="blog">
+            <div class="content">
+                <h3>优质博客</h3>
+                <p>花裤衩前端圈 <a target="_bank" href="https://jianshiapp.com/circles/1209">点击访问</a></p>
+                <p>Jartto个人博客 <a target="_bank" href="http://jartto.wang/">点击访问</a></p>
+            </div>
+            <div class="tool">
+                   
+            </div>
+            <div class="footer"></div>
+        </div>
+    </div>
 </body>
 </html>
